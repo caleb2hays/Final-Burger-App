@@ -40,6 +40,15 @@ namespace Final_Burger_Application
             pnlPrevNext.Visible = false;
             pnlOrderType.Visible = false;
             pnlBuild.Visible = false;
+            pnlBun.Visible = false;
+            pnlCheese.Visible = false;
+            pnlComplete.Visible = false;
+            pnlNav.Visible = false;
+            pnlOrderDisplay.Visible = false;
+            pnlSauce.Visible = false;
+            pnlSpecialties.Visible = false;
+            pnlSummary.Visible = false;
+            pnlToppings.Visible = false;
 
         }
 

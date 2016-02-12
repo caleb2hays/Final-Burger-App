@@ -60,6 +60,11 @@
             this.lblSauce = new System.Windows.Forms.Label();
             this.pnlSummary = new System.Windows.Forms.Panel();
             this.lblSummary = new System.Windows.Forms.Label();
+            this.btnSummaryYes = new System.Windows.Forms.Button();
+            this.btnSummaryNo = new System.Windows.Forms.Button();
+            this.pnlComplete = new System.Windows.Forms.Panel();
+            this.lblComplete = new System.Windows.Forms.Label();
+            this.pnlSpecialties = new System.Windows.Forms.Panel();
             this.pnlStart.SuspendLayout();
             this.pnlLocation.SuspendLayout();
             this.pnlOrderType.SuspendLayout();
@@ -71,6 +76,7 @@
             this.pnlToppings.SuspendLayout();
             this.pnlSauce.SuspendLayout();
             this.pnlSummary.SuspendLayout();
+            this.pnlComplete.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlStart
@@ -371,6 +377,8 @@
             // pnlSummary
             // 
             this.pnlSummary.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlSummary.Controls.Add(this.btnSummaryNo);
+            this.pnlSummary.Controls.Add(this.btnSummaryYes);
             this.pnlSummary.Controls.Add(this.lblSummary);
             this.pnlSummary.Location = new System.Drawing.Point(282, 126);
             this.pnlSummary.Name = "pnlSummary";
@@ -386,11 +394,57 @@
             this.lblSummary.TabIndex = 0;
             this.lblSummary.Text = "Summary";
             // 
+            // btnSummaryYes
+            // 
+            this.btnSummaryYes.Location = new System.Drawing.Point(156, 260);
+            this.btnSummaryYes.Name = "btnSummaryYes";
+            this.btnSummaryYes.Size = new System.Drawing.Size(75, 23);
+            this.btnSummaryYes.TabIndex = 1;
+            this.btnSummaryYes.Text = "Yes";
+            this.btnSummaryYes.UseVisualStyleBackColor = true;
+            // 
+            // btnSummaryNo
+            // 
+            this.btnSummaryNo.Location = new System.Drawing.Point(288, 260);
+            this.btnSummaryNo.Name = "btnSummaryNo";
+            this.btnSummaryNo.Size = new System.Drawing.Size(75, 23);
+            this.btnSummaryNo.TabIndex = 2;
+            this.btnSummaryNo.Text = "No";
+            this.btnSummaryNo.UseVisualStyleBackColor = true;
+            // 
+            // pnlComplete
+            // 
+            this.pnlComplete.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlComplete.Controls.Add(this.lblComplete);
+            this.pnlComplete.Location = new System.Drawing.Point(282, 38);
+            this.pnlComplete.Name = "pnlComplete";
+            this.pnlComplete.Size = new System.Drawing.Size(519, 441);
+            this.pnlComplete.TabIndex = 12;
+            // 
+            // lblComplete
+            // 
+            this.lblComplete.AutoSize = true;
+            this.lblComplete.Location = new System.Drawing.Point(182, 36);
+            this.lblComplete.Name = "lblComplete";
+            this.lblComplete.Size = new System.Drawing.Size(108, 17);
+            this.lblComplete.TabIndex = 0;
+            this.lblComplete.Text = "Order Complete";
+            // 
+            // pnlSpecialties
+            // 
+            this.pnlSpecialties.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlSpecialties.Location = new System.Drawing.Point(282, 38);
+            this.pnlSpecialties.Name = "pnlSpecialties";
+            this.pnlSpecialties.Size = new System.Drawing.Size(519, 441);
+            this.pnlSpecialties.TabIndex = 13;
+            // 
             // Ordering
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1129, 720);
+            this.Controls.Add(this.pnlSpecialties);
+            this.Controls.Add(this.pnlComplete);
             this.Controls.Add(this.pnlSummary);
             this.Controls.Add(this.pnlSauce);
             this.Controls.Add(this.pnlToppings);
@@ -425,6 +479,8 @@
             this.pnlSauce.PerformLayout();
             this.pnlSummary.ResumeLayout(false);
             this.pnlSummary.PerformLayout();
+            this.pnlComplete.ResumeLayout(false);
+            this.pnlComplete.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -463,6 +519,11 @@
         private System.Windows.Forms.Label lblSauce;
         private System.Windows.Forms.Panel pnlSummary;
         private System.Windows.Forms.Label lblSummary;
+        private System.Windows.Forms.Button btnSummaryNo;
+        private System.Windows.Forms.Button btnSummaryYes;
+        private System.Windows.Forms.Panel pnlComplete;
+        private System.Windows.Forms.Label lblComplete;
+        private System.Windows.Forms.Panel pnlSpecialties;
 
     }
 }
