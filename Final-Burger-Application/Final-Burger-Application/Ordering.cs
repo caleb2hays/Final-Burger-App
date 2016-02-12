@@ -31,7 +31,7 @@ namespace Final_Burger_Application
         }
 
 
-
+        //Application Load
         private void Ordering_Load(object sender, EventArgs e)
         {
 
@@ -39,10 +39,12 @@ namespace Final_Burger_Application
             pnlLocation.Visible = false;
             pnlPrevNext.Visible = false;
             pnlOrderType.Visible = false;
-
+            pnlBuild.Visible = false;
 
         }
 
+
+        // Button Click Events
         private void btnStart_Click(object sender, EventArgs e)
         {
             pnlStart.Visible = false;
@@ -72,6 +74,16 @@ namespace Final_Burger_Application
 
         }
 
+        private void btnBuild_Click(object sender, EventArgs e)
+        {
+            pnlOrderType.Visible = false;
+        }
+
+        private void btnSpecialty_Click(object sender, EventArgs e)
+        {
+            pnlOrderType.Visible = false;
+        }
+
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
@@ -83,6 +95,11 @@ namespace Final_Burger_Application
                     pnlLocation.Visible = true;
                     break;
 
+                case "build":
+                    pnlBuild.Visible = false;
+                    pnlLocation.Visible = true;
+                    break;
+
                 default:
                     pnlStart.Visible = true;
                     break;
@@ -90,7 +107,7 @@ namespace Final_Burger_Application
         }
 
 
-
+        //Panel Visible Changed Events
         private void pnlOrderType_VisibleChanged(object sender, EventArgs e)
         {
             if (pnlOrderType.Visible == true)
@@ -115,6 +132,18 @@ namespace Final_Burger_Application
                 orderStep = "start";
             }
         }
+
+
+        private void pnlBuild_VisibleChanged(object sender, EventArgs e)
+        {
+            if (pnlBuild.Visible == true)
+            {
+                orderStep = "build";
+            }
+
+        }
+
+        
 
         
     }
