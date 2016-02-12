@@ -5,3 +5,4 @@ C:\Users\haycalg\Desktop\Final-Burger-App\Final-Burger-Application\Final-Burger-
 C:\Users\haycalg\Desktop\Final-Burger-App\Final-Burger-Application\Final-Burger-Application\obj\x86\Debug\Final-Burger-Application.csproj.GenerateResource.Cache
 C:\Users\haycalg\Desktop\Final-Burger-App\Final-Burger-Application\Final-Burger-Application\obj\x86\Debug\Final-Burger-Application.exe
 C:\Users\haycalg\Desktop\Final-Burger-App\Final-Burger-Application\Final-Burger-Application\obj\x86\Debug\Final-Burger-Application.pdb
+C:\Users\haycalg\Desktop\Final-Burger-App\Final-Burger-Application\Final-Burger-Application\obj\x86\Debug\Final-Burger-Application.csprojResolveAssemblyReference.cache
