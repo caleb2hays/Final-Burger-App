@@ -17,7 +17,7 @@ namespace Final_Burger_Application
         
         string orderStep; // keeps track of current panel
 
-        string[] optionsArray = new string[4];
+        public string[] optionsArray = new string[4];
         string bunType;
         string cheeseType;
         string[] toppings = new string[] {};
@@ -40,18 +40,17 @@ namespace Final_Burger_Application
 
             //Hide the rest of the panels
             pnlLocation.Visible = false;
-            pnlPrevNext.Visible = false;
             pnlOrderType.Visible = false;
+            pnlPrevNext.Visible = false;
             pnlBuild.Visible = false;
             pnlBun.Visible = false;
             pnlCheese.Visible = false;
-            pnlComplete.Visible = false;
-            pnlNav.Visible = false;
-            pnlStack.Visible = false;
+            pnlToppings.Visible = false;
             pnlSauce.Visible = false;
             pnlSpecialties.Visible = false;
             pnlSummary.Visible = false;
-            pnlToppings.Visible = false;
+            pnlComplete.Visible = false;
+            pnlNav.Visible = false;
             pnlStack.Visible = false;
 
             lblStack.Text = "";
@@ -63,11 +62,12 @@ namespace Final_Burger_Application
 
 
         //Panel Visible Changed Events
-        private void pnlOrderType_VisibleChanged(object sender, EventArgs e)
+
+        private void pnlStart_VisibleChanged(object sender, EventArgs e)
         {
-            if (pnlOrderType.Visible == true)
+            if (pnlStart.Visible == true)
             {
-                orderStep = "ordertype";
+                orderStep = "start";
             }
         }
 
@@ -77,16 +77,15 @@ namespace Final_Burger_Application
             if (pnlLocation.Visible == true)
             {
                 orderStep = "location";
-                pnlPrevNext.Visible = false;
             }
         }
 
 
-        private void pnlStart_VisibleChanged(object sender, EventArgs e)
+        private void pnlOrderType_VisibleChanged(object sender, EventArgs e)
         {
-            if (pnlStart.Visible == true)
+            if (pnlOrderType.Visible == true)
             {
-                orderStep = "start";
+                orderStep = "ordertype";
             }
         }
 
@@ -106,20 +105,24 @@ namespace Final_Burger_Application
             if (pnlBun.Visible == true)
             {
                 orderStep = "bun";
-                btnNext.Enabled = false;
             }
         }
 
-        private void pnlBun_VisibleChanged(object sender, EventArgs e)
+        private void pnlCheese_VisibleChanged(object sender, EventArgs e)
         {
-            if (pnlBun.Visible == true)
+            if (pnlCheese.Visible == true)
             {
-                orderStep = "cheeses";
-                btnNext.Enabled = false;
+                orderStep = "cheese";
             }
         }
 
-
+        private void pnlCheese_VisibleChanged(object sender, EventArgs e)
+        {
+            if (pnlCheese.Visible == true)
+            {
+                orderStep = "cheese";
+            }
+        }
 
 
 
@@ -128,8 +131,19 @@ namespace Final_Burger_Application
         private void btnStart_Click(object sender, EventArgs e)
         {
             pnlStart.Visible = false;
-            pnlLocation.Visible = true;
+            pnlLocation.Visible = false;
+            pnlOrderType.Visible = false;
             pnlPrevNext.Visible = false;
+            pnlBuild.Visible = false;
+            pnlBun.Visible = false;
+            pnlCheese.Visible = false;
+            pnlToppings.Visible = false;
+            pnlSauce.Visible = false;
+            pnlSpecialties.Visible = false;
+            pnlSummary.Visible = false;
+            pnlComplete.Visible = false;
+            pnlNav.Visible = false;
+            pnlStack.Visible = false;
         }
 
 
@@ -138,10 +152,9 @@ namespace Final_Burger_Application
         private void btnIn_Click(object sender, EventArgs e)
         {
             takeOut = false;
-
             pnlLocation.Visible = false;
+            pnlOrderType.Visible = true;
             pnlPrevNext.Visible = true;
-            pnlBuild.Visible = true;
 
         }
 
@@ -162,67 +175,9 @@ namespace Final_Burger_Application
         }
 
 
-        private void btnBuildStart_Click(object sender, EventArgs e)
-        {
-            pnlBuild.Visible = false;
-            pnlBun.Visible = true;
-            pnlNav.Visible = true;
-            pnlStack.Visible = true;
-            pnlToppings.Visible = false;
-        }
-
-        private void btnWhiteBun_Click(object sender, EventArgs e)
-        {
-            optionsArray[0] = "whiteBun\n";
-            lblStack.Text = optionsArray[0];
-            btnNext.Enabled = true;
-        }
-
-
-        private void btnWheatBun_Click(object sender, EventArgs e)
-        {
-            optionsArray[0] = "wheatBun\n";
-            lblStack.Text = optionsArray[0];
-            btnNext.Enabled = true;
-        }
-
-        private void btnPotatoBun_Click(object sender, EventArgs e)
-        {
-            optionsArray[0] = "potatoBun\n";
-            lblStack.Text = optionsArray[0];
-            btnNext.Enabled = true;
-        }
-
         private void btnSpecialty_Click(object sender, EventArgs e)
         {
-
-        }
-
-
-
-
-
-
-
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            switch (orderStep)
-            {
-                case "build":
-                    pnlBuild.Visible = false;
-                    pnlBun.Visible = true;
-                    break;
-
-                case "bun":
-                    pnlBun.Visible = false;
-                    pnlCheese.Visible = true;
-                    break;
-
-                default:
-                    pnlStart.Visible = true;
-                    break;
-            }
+            pnlOrderType.Visible = false;
         }
 
 
@@ -255,32 +210,98 @@ namespace Final_Burger_Application
                     break;
             }
         }
+     
+
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            switch (orderStep)
+            {
+                case "build":
+                    pnlBuild.Visible = false;
+                    pnlBun.Visible = true;
+                    break;
+
+                case "bun":
+                    pnlBun.Visible = false;
+                    pnlCheese.Visible = true;
+                    break;
+
+                default:
+                    pnlStart.Visible = true;
+                    break;
+            }
+        }
+
+
+
+
+        private void btnBuildStart_Click(object sender, EventArgs e)
+        {
+            pnlBuild.Visible = false;
+            pnlBun.Visible = true;
+            pnlNav.Visible = true;
+            pnlStack.Visible = true;
+        }
+
+
+        private void btnWhiteBun_Click(object sender, EventArgs e)
+        {
+            btnNext.Enabled = true;
+            optionsArray[0] = Bun.createBun("White Bun");
+            buildOptions();
+        }
+
+
+        private void btnWheatBun_Click(object sender, EventArgs e)
+        {
+            btnNext.Enabled = true;
+            optionsArray[0] = Bun.createBun("Wheat Bun");
+            buildOptions();
+        }
+
+        private void btnPotatoBun_Click(object sender, EventArgs e)
+        {
+            btnNext.Enabled = true;
+            optionsArray[0] = Bun.createBun("Potato Bun");
+            buildOptions();
+        }
 
         private void btnAmerican_Click(object sender, EventArgs e)
         {
-            optionsArray[1] = "americanCheese\n";
-            lblStack.Text += optionsArray[1];
+            btnNext.Enabled = true;
+            optionsArray[1] = Cheese.createCheese("American Cheese");
+            buildOptions();
         }
 
         private void btnCheddar_Click(object sender, EventArgs e)
         {
-            optionsArray[1] = "cheddarCheese\n";
-            lblStack.Text += optionsArray[1];
+            btnNext.Enabled = true;
+            optionsArray[1] = Cheese.createCheese("Cheddar Cheese");
+            buildOptions();
         }
 
         private void btnSwiss_Click(object sender, EventArgs e)
         {
-            optionsArray[1] = "swissCheese\n";
-            lblStack.Text += optionsArray[1];
+            btnNext.Enabled = true;
+            optionsArray[1] = Cheese.createCheese("Swiss Cheese");
+            buildOptions();
         }
 
         private void btnNoCheese_Click(object sender, EventArgs e)
         {
-            optionsArray[1] = "noCheese\n";
-            lblStack.Text += optionsArray[1];
+            btnNext.Enabled = true;
+            optionsArray[1] = Cheese.createCheese("No Cheese");
+            buildOptions();
         }
 
-        
+        private void buildOptions()
+        {
+            lblStack.Text = optionsArray[0] + "\n" +
+                            optionsArray[1] + "\n" +
+                            optionsArray[2] + "\n" +
+                            optionsArray[3] + "\n";
+        }
         
 
       

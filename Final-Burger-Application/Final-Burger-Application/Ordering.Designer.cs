@@ -51,6 +51,7 @@
             this.btnCheese = new System.Windows.Forms.Button();
             this.btnBuns = new System.Windows.Forms.Button();
             this.pnlStack = new System.Windows.Forms.Panel();
+            this.lblStack = new System.Windows.Forms.Label();
             this.lblYourOrder = new System.Windows.Forms.Label();
             this.pnlBun = new System.Windows.Forms.Panel();
             this.btnPotatoBun = new System.Windows.Forms.Button();
@@ -58,6 +59,10 @@
             this.btnWhiteBun = new System.Windows.Forms.Button();
             this.lblBuns = new System.Windows.Forms.Label();
             this.pnlCheese = new System.Windows.Forms.Panel();
+            this.btnNoCheese = new System.Windows.Forms.Button();
+            this.btnSwiss = new System.Windows.Forms.Button();
+            this.btnCheddar = new System.Windows.Forms.Button();
+            this.btnAmerican = new System.Windows.Forms.Button();
             this.lblCheese = new System.Windows.Forms.Label();
             this.pnlToppings = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -81,11 +86,6 @@
             this.btnSpecialTwo = new System.Windows.Forms.Button();
             this.btnSpecialOne = new System.Windows.Forms.Button();
             this.lblSpecialties = new System.Windows.Forms.Label();
-            this.lblStack = new System.Windows.Forms.Label();
-            this.btnAmerican = new System.Windows.Forms.Button();
-            this.btnCheddar = new System.Windows.Forms.Button();
-            this.btnSwiss = new System.Windows.Forms.Button();
-            this.btnNoCheese = new System.Windows.Forms.Button();
             this.pnlStart.SuspendLayout();
             this.pnlLocation.SuspendLayout();
             this.pnlOrderType.SuspendLayout();
@@ -341,6 +341,14 @@
             this.pnlStack.Size = new System.Drawing.Size(200, 441);
             this.pnlStack.TabIndex = 6;
             // 
+            // lblStack
+            // 
+            this.lblStack.AutoSize = true;
+            this.lblStack.Location = new System.Drawing.Point(26, 88);
+            this.lblStack.Name = "lblStack";
+            this.lblStack.Size = new System.Drawing.Size(0, 17);
+            this.lblStack.TabIndex = 1;
+            // 
             // lblYourOrder
             // 
             this.lblYourOrder.AutoSize = true;
@@ -416,6 +424,46 @@
             this.pnlCheese.Size = new System.Drawing.Size(519, 353);
             this.pnlCheese.TabIndex = 8;
             // 
+            // btnNoCheese
+            // 
+            this.btnNoCheese.Location = new System.Drawing.Point(329, 189);
+            this.btnNoCheese.Name = "btnNoCheese";
+            this.btnNoCheese.Size = new System.Drawing.Size(75, 23);
+            this.btnNoCheese.TabIndex = 4;
+            this.btnNoCheese.Text = "No Cheese";
+            this.btnNoCheese.UseVisualStyleBackColor = true;
+            this.btnNoCheese.Click += new System.EventHandler(this.btnNoCheese_Click);
+            // 
+            // btnSwiss
+            // 
+            this.btnSwiss.Location = new System.Drawing.Point(114, 186);
+            this.btnSwiss.Name = "btnSwiss";
+            this.btnSwiss.Size = new System.Drawing.Size(75, 23);
+            this.btnSwiss.TabIndex = 3;
+            this.btnSwiss.Text = "Swiss";
+            this.btnSwiss.UseVisualStyleBackColor = true;
+            this.btnSwiss.Click += new System.EventHandler(this.btnSwiss_Click);
+            // 
+            // btnCheddar
+            // 
+            this.btnCheddar.Location = new System.Drawing.Point(329, 115);
+            this.btnCheddar.Name = "btnCheddar";
+            this.btnCheddar.Size = new System.Drawing.Size(75, 23);
+            this.btnCheddar.TabIndex = 2;
+            this.btnCheddar.Text = "Cheddar";
+            this.btnCheddar.UseVisualStyleBackColor = true;
+            this.btnCheddar.Click += new System.EventHandler(this.btnCheddar_Click);
+            // 
+            // btnAmerican
+            // 
+            this.btnAmerican.Location = new System.Drawing.Point(114, 115);
+            this.btnAmerican.Name = "btnAmerican";
+            this.btnAmerican.Size = new System.Drawing.Size(75, 23);
+            this.btnAmerican.TabIndex = 1;
+            this.btnAmerican.Text = "American";
+            this.btnAmerican.UseVisualStyleBackColor = true;
+            this.btnAmerican.Click += new System.EventHandler(this.btnAmerican_Click);
+            // 
             // lblCheese
             // 
             this.lblCheese.AutoSize = true;
@@ -442,7 +490,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(207, 236);
+            this.button4.Location = new System.Drawing.Point(307, 236);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 4;
@@ -452,7 +500,7 @@
             // btnToppingThree
             // 
             this.btnToppingThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToppingThree.Location = new System.Drawing.Point(88, 236);
+            this.btnToppingThree.Location = new System.Drawing.Point(124, 236);
             this.btnToppingThree.Name = "btnToppingThree";
             this.btnToppingThree.Size = new System.Drawing.Size(75, 23);
             this.btnToppingThree.TabIndex = 3;
@@ -462,7 +510,7 @@
             // btnToppingTwo
             // 
             this.btnToppingTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToppingTwo.Location = new System.Drawing.Point(270, 145);
+            this.btnToppingTwo.Location = new System.Drawing.Point(306, 145);
             this.btnToppingTwo.Name = "btnToppingTwo";
             this.btnToppingTwo.Size = new System.Drawing.Size(75, 23);
             this.btnToppingTwo.TabIndex = 2;
@@ -472,7 +520,7 @@
             // btnToppingsOne
             // 
             this.btnToppingsOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToppingsOne.Location = new System.Drawing.Point(73, 134);
+            this.btnToppingsOne.Location = new System.Drawing.Point(124, 145);
             this.btnToppingsOne.Name = "btnToppingsOne";
             this.btnToppingsOne.Size = new System.Drawing.Size(75, 23);
             this.btnToppingsOne.TabIndex = 1;
@@ -483,7 +531,7 @@
             // 
             this.lblToppings.AutoSize = true;
             this.lblToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblToppings.Location = new System.Drawing.Point(160, 42);
+            this.lblToppings.Location = new System.Drawing.Point(196, 42);
             this.lblToppings.Name = "lblToppings";
             this.lblToppings.Size = new System.Drawing.Size(198, 20);
             this.lblToppings.TabIndex = 0;
@@ -646,55 +694,6 @@
             this.lblSpecialties.TabIndex = 0;
             this.lblSpecialties.Text = "Choose Your Specialty";
             // 
-            // lblStack
-            // 
-            this.lblStack.AutoSize = true;
-            this.lblStack.Location = new System.Drawing.Point(26, 88);
-            this.lblStack.Name = "lblStack";
-            this.lblStack.Size = new System.Drawing.Size(41, 17);
-            this.lblStack.TabIndex = 1;
-            this.lblStack.Text = "stack";
-            // 
-            // btnAmerican
-            // 
-            this.btnAmerican.Location = new System.Drawing.Point(114, 115);
-            this.btnAmerican.Name = "btnAmerican";
-            this.btnAmerican.Size = new System.Drawing.Size(75, 23);
-            this.btnAmerican.TabIndex = 1;
-            this.btnAmerican.Text = "American";
-            this.btnAmerican.UseVisualStyleBackColor = true;
-            this.btnAmerican.Click += new System.EventHandler(this.btnAmerican_Click);
-            // 
-            // btnCheddar
-            // 
-            this.btnCheddar.Location = new System.Drawing.Point(329, 115);
-            this.btnCheddar.Name = "btnCheddar";
-            this.btnCheddar.Size = new System.Drawing.Size(75, 23);
-            this.btnCheddar.TabIndex = 2;
-            this.btnCheddar.Text = "Cheddar";
-            this.btnCheddar.UseVisualStyleBackColor = true;
-            this.btnCheddar.Click += new System.EventHandler(this.btnCheddar_Click);
-            // 
-            // btnSwiss
-            // 
-            this.btnSwiss.Location = new System.Drawing.Point(114, 186);
-            this.btnSwiss.Name = "btnSwiss";
-            this.btnSwiss.Size = new System.Drawing.Size(75, 23);
-            this.btnSwiss.TabIndex = 3;
-            this.btnSwiss.Text = "Swiss";
-            this.btnSwiss.UseVisualStyleBackColor = true;
-            this.btnSwiss.Click += new System.EventHandler(this.btnSwiss_Click);
-            // 
-            // btnNoCheese
-            // 
-            this.btnNoCheese.Location = new System.Drawing.Point(329, 189);
-            this.btnNoCheese.Name = "btnNoCheese";
-            this.btnNoCheese.Size = new System.Drawing.Size(75, 23);
-            this.btnNoCheese.TabIndex = 4;
-            this.btnNoCheese.Text = "No Cheese";
-            this.btnNoCheese.UseVisualStyleBackColor = true;
-            this.btnNoCheese.Click += new System.EventHandler(this.btnNoCheese_Click);
-            // 
             // Ordering
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -702,12 +701,12 @@
             this.ClientSize = new System.Drawing.Size(1129, 720);
             this.Controls.Add(this.pnlCheese);
             this.Controls.Add(this.pnlBun);
+            this.Controls.Add(this.pnlToppings);
+            this.Controls.Add(this.pnlStart);
             this.Controls.Add(this.pnlBuild);
             this.Controls.Add(this.pnlPrevNext);
-            this.Controls.Add(this.pnlStart);
             this.Controls.Add(this.pnlStack);
             this.Controls.Add(this.pnlLocation);
-            this.Controls.Add(this.pnlToppings);
             this.Controls.Add(this.pnlComplete);
             this.Controls.Add(this.pnlSpecialties);
             this.Controls.Add(this.pnlSauce);
