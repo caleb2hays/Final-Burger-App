@@ -1,0 +1,8 @@
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\bin\Debug\New-Burger-Application.exe
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\bin\Debug\New-Burger-Application.pdb
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Debug\New_Burger_Application.Ordering.resources
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Debug\New_Burger_Application.Properties.Resources.resources
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Debug\New-Burger-Application.csproj.GenerateResource.Cache
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Debug\New-Burger-Application.exe
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Debug\New-Burger-Application.pdb
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Debug\New-Burger-Application.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\bin\Release\New-Burger-Application.exe
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\bin\Release\New-Burger-Application.pdb
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Release\New_Burger_Application.Ordering.resources
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Release\New_Burger_Application.Properties.Resources.resources
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Release\New-Burger-Application.csproj.GenerateResource.Cache
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Release\New-Burger-Application.exe
+C:\Users\haycalg\Desktop\New Burger App\New-Burger-Application\New-Burger-Application\obj\x86\Release\New-Burger-Application.pdb
